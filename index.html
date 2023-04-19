@@ -64,12 +64,6 @@
                             </path>
                         </svg></a>
                 </div>
-                <button onclick="toggleNav()" id="navButton"
-                    class="rounded-full p-0.5 focus:outline-none lg:hidden"><svg viewBox="0 0 24 24" width="1.2em"
-                        height="1.2em" class="h-10 w-10">
-                        <path fill="currentColor" d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path>
-                    </svg>
-                </button>
 
                 <div class="theme-toggler">
                     <input type="checkbox" class="checkbox" id="checkbox">
@@ -80,6 +74,12 @@
                     </label>
                 </div>
 
+                <button onclick="toggleNav()" id="navButton"
+                    class="rounded-full p-0.5 focus:outline-none lg:hidden"><svg viewBox="0 0 24 24" width="1.2em"
+                        height="1.2em" class="h-10 w-10">
+                        <path fill="currentColor" d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path>
+                    </svg>
+                </button>
             </div>
             <!--]-->
         </div>
@@ -87,7 +87,6 @@
 
 
     <div id="mySidenav" class="sidenav">
-
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Clients</a>
@@ -109,23 +108,24 @@
                         <div class="flex items-center space-x-4">
                             <div
                                 class="bg-white/12 border-#767676/30 max-w-64 min-w-52 truncate rounded-full border py-2">
-                                <span class="px-3 text-2 font-semibold"> 0x45289007706E7Ee7B42b1fA506661d97740Edfb4
+                                <span id="address" class="px-3 text-2 font-semibold">
+                                    0x45289007706E7Ee7B42b1fA506661d97740Edfb4
                                 </span>
-                            </div><button
+                            </div><button onclick="copyAddress()" id="copyBtn"
                                 class="inline-flex items-center justify-center rounded-full px-3 py-2 text-sm font-medium"
                                 style="--3c9d0845-text:#fff;--3c9d0845-border:transparent;--3c9d0845-bg:#27a2f0;"
                                 data-v-3c9d0845=""><!--[-->Copy Address<!--]--></button>
                         </div>
                         <div class="max-w-96 space-y-6 text-center lg:text-right">
-                            <h1 class="text-2xl font-bold xl:text-3xl 2xl:text-5xl"> Floki Ceo is a token inspired
-                                by Elon Musk's tweets. </h1>
-                            <p class="text-sm xl:text-base 2xl:text-lg"> Floki Ceo is a token inspired by Elon
-                                Musk's tweets.Floki Ceo leads the meme "CEO" trend and is the most successful token
-                                in this trend. Bring high returns for investors up to 150 times at ATH. Within 1
-                                month of listing
-                                on many different exchanges. Not only that, Floki Ceo will continue to list and look
-                                for many other exchanges, creating an ecosystem where you can use Floki Ceo tokens
-                                for Web3, gaming, nft, dex, ect. </p>
+                            <h1 class="text-2xl font-bold xl:text-3xl 2xl:text-5xl">What Is Limousine coin ?
+                            </h1>
+                            <p class="text-sm xl:text-base 2xl:text-lg"> Limousine coin is a Metaverse car racing and
+                                taxi game where you can earn $LMC, nft rewards, limited high-ticket prizes,
+                                and digital collectibles by: Winning tournaments. Completing daily challenges. Managing
+                                an Limousine coin team for a
+                                reward split. Whether you're a Racing or a taxi game, you'll have a fun time playing.
+
+                            </p>
                             <div class="max-w-56 inline-grid grid-cols-2 gap-4"><button
                                     class="inline-flex items-center justify-center rounded-full px-3 py-2 text-sm font-medium"
                                     style="--3c9d0845-text:#fff;--3c9d0845-border:transparent;--3c9d0845-bg:#242324;"
@@ -429,13 +429,13 @@
                         burn
                         $FLOKICEO
                     </h1>
-                    <div class="align-center space-x-12 mt-100 rounded-2xl">
+                    <div class="align-center mt-100 rounded-2xl">
                         <link rel="stylesheet" href="https://voltichange.net/css/widget.css"><iframe
                             class="voltichange-widget d-flex justify-center items-center align-center"
                             src="https://voltichange.net/api/widget/?chain=56&amp;darktheme=true&amp;tokenin=Native&amp;tokenout=0x45289007706E7Ee7B42b1fA506661d97740Edfb4&amp;slippage=12"
                             style="border:none;overflow:hidden;display:block;margin:0 auto;" frameborder="0">
                         </iframe>
-                        <p class="text-center">*0.25% of every trade automatically sent to the burn address</p>
+                        <p class="text-lg text-center">*0.25% of every trade automatically sent to the burn address</p>
                     </div>
                 </div>
             </div>
@@ -529,36 +529,33 @@
                             </div>
                         </div>
                         <div data-tilt data-tilt-speed="400" data-tilt-perspective="1000" data-tilt-max="3"
-                            class="text-lg h-120 bg-white/0.2 glass-box-shadow flex flex-col items-center space-y-4 rounded-2xl px-2 py-4 shadow">
-                            <div class="-mr-4 -mt-4 flex flex-wrap items-center justify-center">
-                                <div
-                                    class="border-#f3ba2f mr-4 mt-4 inline-flex items-center space-x-2 rounded-2xl border px-4 py-2">
-                                    <svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="h-6 w-6">
-                                        <path fill="currentColor"
-                                            d="M17 15.22c0 .98-.8 1.78-1.78 1.78s-1.77-.8-1.77-1.78s.79-1.77 1.77-1.77s1.78.79 1.78 1.77M8.83 10.6c.98 0 1.77-.79 1.77-1.77c0-.99-.79-1.78-1.77-1.78c-.99 0-1.78.79-1.78 1.78c0 .98.79 1.77 1.78 1.77M7 15.53l1.5 1.5l8.53-8.53l-1.5-1.5L7 15.53M22 12c0 5.5-4.5 10-10 10S2 17.5 2 12S6.5 2 12 2s10 4.5 10 10m-2 0c0-4.41-3.59-8-8-8s-8 3.59-8 8s3.59 8 8 8s8-3.59 8-8Z">
-                                        </path>
-                                    </svg>
-                                    <span class="text-xs font-medium sm:text-base xl:text-lg">34% Presale</span>
-                                </div>
-                                <div
-                                    class="border-#8bc53f mr-4 mt-4 inline-flex items-center space-x-2 rounded-2xl border px-4 py-2">
-                                    <svg viewBox="0 0 24 24" width="1.2em" height="1.2em" class="h-6 w-6">
-                                        <path fill="currentColor"
-                                            d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m1 5h-2v4H7v2h4v4h2v-4h4v-2h-4V7Z">
-                                        </path>
-                                    </svg>
-                                    <span class="text-xs font-medium sm:text-base xl:text-lg">16% Add
-                                        liquidity</span>
-                                </div>
-                            </div><img class="w-76" src="/assets/chart-tokenomic-dfd7a6c2.svg">
-                            <div class="border-#2b6aff inline-flex items-center space-x-2 rounded-2xl border px-4 py-2">
-                                <svg viewBox="0 0 512 512" width="1.2em" height="1.2em" class="h-6 w-6">
-                                    <path fill="currentColor"
-                                        d="M239.344 24.063c-9.56 0-17.313 7.754-17.313 17.312c0 9.558 7.755 17.313 17.314 17.313c9.558 0 17.28-7.755 17.28-17.313c0-9.56-7.722-17.313-17.28-17.313zM39.594 35.75c-10.393 0-18.813 8.42-18.813 18.813c0 10.39 8.42 18.812 18.814 18.812c10.393 0 18.812-8.42 18.812-18.813c0-10.392-8.42-18.812-18.812-18.812zM188.47 51.156c-14.34 0-25.97 11.6-25.97 25.938c0 14.336 11.63 25.97 25.97 25.97c14.337 0 25.968-11.634 25.968-25.97c0-14.338-11.63-25.938-25.97-25.938zm116.25 2.563c26.45 67.124-59.23 117.28-57 35.218c-40.215 36.923-12.817 84.228 4.78 121.874c13.34 28.545 12.342 53.843-10.125 63.47c-16.035 6.87-33.87-11.593-39.625-30.532c-1.254-4.128-1.663-9.237-1.47-15.375c9.652-.805 17.22-8.892 17.22-18.75c0-10.393-8.42-18.813-18.813-18.813c-10.392 0-18.812 8.42-18.812 18.813c0 7.014 3.84 13.14 9.53 16.375c-18.82 20.668-37.66 10.494-25.186-51.78c-59.608 67.83-38.06 198.86 45.03 238.874c-12.994-25.466-20.146-57.053-14.25-84c36.35 78.815 121.1 1.41 126.03-69.094c13.49 44.606 11.636 109.75-10.78 156.47c90.405-35.317 110.666-171.47 63-239.47c-5.868 82.112-70.492 50.032-44.03-58.406c6.495-26.622-12.05-57.205-25.5-64.875zM54.5 90.78c-9.56 0-17.313 7.756-17.313 17.314c0 9.557 7.754 17.312 17.313 17.312c9.56 0 17.313-7.755 17.313-17.312c0-9.56-7.754-17.313-17.313-17.313zm66.625 5.157c-11.525 0-20.844 9.352-20.844 20.876c0 2.88.57 5.628 1.626 8.124c-11.332 2.75-19.75 12.98-19.75 25.157c0 14.284 11.59 25.875 25.875 25.875c14.287 0 25.876-11.592 25.876-25.876a25.785 25.785 0 0 0-4.28-14.25c7.284-3.256 12.374-10.537 12.374-19.03c0-11.526-9.35-20.876-20.875-20.876zm258.28 22.376c-9.557 0-17.28 7.754-17.28 17.312c0 9.558 7.723 17.313 17.28 17.313c9.56 0 17.314-7.755 17.314-17.313c0-9.56-7.755-17.313-17.314-17.313zM99.814 196.5c-9.56 0-17.313 7.755-17.313 17.313c0 9.557 7.754 17.312 17.313 17.312c9.558 0 17.312-7.755 17.312-17.313S109.37 196.5 99.812 196.5zm1.406 168c-50.154 13.628-82.564 33.797-82.564 56.188c0 41.017 106.546 74.375 237.72 74.375c131.172 0 237.687-33.358 237.687-74.375c0-22.31-32.125-42.562-81.97-56.188c17.232 8.88 27.5 19.243 27.5 30.438c0 32.13-82.28 58.562-183.218 58.562c-100.937 0-182.688-26.435-182.688-58.563c0-11.254 10.125-21.528 27.532-30.437z">
-                                    </path>
-                                </svg>
-                                <span class="text-xs font-medium sm:text-base xl:text-lg">50% Burnt</span>
+                            class="text-lg height-ob bg-white/0.2 glass-box-shadow flex flex-col items-center justify-center space-y-4 rounded-2xl px-2 py-4 shadow">
+
+                            <!-- <img class="w-48" src="/assets/chart-tokenomic-dfd7a6c2.svg"> -->
+
+                            <div id="myChart" class="myChart" style=" max-width:500px;">
                             </div>
+
+                            <!-- <div class="-mr-4 -mt-4 flex flex-wrap items-center justify-center">
+                                <div
+                                    class="border-five mr-4 mt-4 inline-flex items-center space-x-2 rounded-2xl border px-4 py-2">
+                                    <span class="text-xs font-medium sm:text-base xl:text-lg">09% Marketing&
+                                        promotion</span>
+                                </div>
+                                <div
+                                    class="border-six mr-4 mt-4 inline-flex items-center space-x-2 rounded-2xl border px-4 py-2">
+                                    <span class="text-xs font-medium sm:text-base xl:text-lg">06% Metaverse
+                                        launch</span>
+                                </div>
+                                <div
+                                    class="border-seven mr-4 mt-4 inline-flex items-center space-x-2 rounded-2xl border px-4 py-2">
+                                    <span class="text-xs font-medium sm:text-base xl:text-lg">03% Partnership</span>
+                                </div>
+                                <div
+                                    class="border-eight mr-4 mt-4 inline-flex items-center space-x-2 rounded-2xl border px-4 py-2">
+                                    <span class="text-xs font-medium sm:text-base xl:text-lg">02% Team</span>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
                     <div data-tilt data-tilt-speed="400" data-tilt-perspective="1000" data-tilt-max="3" data-tilt
@@ -566,7 +563,8 @@
                         <div class="flex flex-col items-start space-y-4"><a
                                 class="dark-button inline-flex items-center space-x-2 rounded-full px-4 py-2 text-black !bg-white/12 shrink-0 !text-white"
                                 href="https://coinmarketcap.com/currencies/floki-ceo/"><span
-                                    class="font-medium"><!--[--> View
+                                    class="font-medium"><!--[-->
+                                    View
                                     on CoinMarketCap <!--]--></span><svg viewBox="0 0 24 24" width="1.2em"
                                     height="1.2em" class="h-4 w-4">
                                     <path fill="currentColor"
@@ -617,26 +615,20 @@
                             <div class="line-vertical h-68 absolute right-14 w-1 bottom-8">
                                 <div class="absolute left-1/2 h-3 w-3 -translate-x-1/2 rounded-full bottom-0"
                                     style="background-color:#ef5152;"></div>
-                                <div class="absolute left-1/2 -translate-x-1/2 whitespace-nowrap -bottom-8">February
+                                <div class="absolute left-1/2 -translate-x-1/2 whitespace-nowrap -bottom-8">PHASE 1
                                 </div>
                             </div>
                             <div class="w-106 -right-92 h-68 absolute p-6 top-102">
-                                <div class="space-y-4">
+                                <div class="">
                                     <div class="space-y-2">
-                                        <p class="text-xl font-bold">Start</p>
+                                        <!-- <p class="text-xl font-bold">Start</p> -->
                                         <div class="line-horizontal h-1 w-48"></div>
                                     </div>
-                                    <p>After successfully presale and listing on Pancakeswap, FLOKICEO was listed on
-                                        Coinmarketcap, Coingecko, continuously reaching the top trending on many
-                                        platforms.</p><a
-                                        class="dark-button inline-flex items-center space-x-2 rounded-full px-4 py-2 text-black !bg-#27a2f0 !text-xs !text-white"
-                                        href="https://t.me/pinkecosystem/1741817"><span
-                                            class="font-medium"><!--[-->Source<!--]--></span><svg viewBox="0 0 24 24"
-                                            width="1.2em" height="1.2em" class="h-4 w-4">
-                                            <path fill="currentColor"
-                                                d="M18 10.82a1 1 0 0 0-1 1V19a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h7.18a1 1 0 0 0 0-2H5a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3v-7.18a1 1 0 0 0-1-1Zm3.92-8.2a1 1 0 0 0-.54-.54A1 1 0 0 0 21 2h-6a1 1 0 0 0 0 2h3.59L8.29 14.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L20 5.41V9a1 1 0 0 0 2 0V3a1 1 0 0 0-.08-.38Z">
-                                            </path>
-                                        </svg></a>
+                                    <p>Team Alignment</p>
+                                    <p> Research & development</p>
+                                    <p> Graphic design</p>
+                                    <p> Social media & website creation</p>
+                                    <p> Token creation</p>
                                 </div>
                             </div>
                         </div>
@@ -651,25 +643,18 @@
                             <div class="line-vertical h-68 absolute right-14 w-1 top-8">
                                 <div class="absolute left-1/2 h-3 w-3 -translate-x-1/2 rounded-full top-0"
                                     style="background-color:#fd9f2d;"></div>
-                                <div class="absolute left-1/2 -translate-x-1/2 whitespace-nowrap -top-8">Feb 27,2023
+                                <div class="absolute left-1/2 -translate-x-1/2 whitespace-nowrap -top-8">PHASE 2
                                 </div>
                             </div>
                             <div class="w-106 -right-92 h-68 absolute p-6 top-8">
-                                <div class="space-y-4">
+                                <div class="">
                                     <div class="space-y-2">
-                                        <p class="text-xl font-bold">BabyDogeSwap</p>
+                                        <!-- <p class="text-xl font-bold">BabyDogeSwap</p> -->
                                         <div class="line-horizontal h-1 w-48"></div>
                                     </div>
-                                    <p>Excited to announce a NEW farm listing and trading is live for FlokiCeoo on
-                                        BabyDogeSwap</p><a
-                                        class="dark-button inline-flex items-center space-x-2 rounded-full px-4 py-2 text-black !bg-#27a2f0 !text-xs !text-white"
-                                        href="https://twitter.com/BabyDogeCoin/status/1629889873501986821?s=20"><span
-                                            class="font-medium"><!--[-->Source<!--]--></span><svg viewBox="0 0 24 24"
-                                            width="1.2em" height="1.2em" class="h-4 w-4">
-                                            <path fill="currentColor"
-                                                d="M18 10.82a1 1 0 0 0-1 1V19a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h7.18a1 1 0 0 0 0-2H5a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3v-7.18a1 1 0 0 0-1-1Zm3.92-8.2a1 1 0 0 0-.54-.54A1 1 0 0 0 21 2h-6a1 1 0 0 0 0 2h3.59L8.29 14.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L20 5.41V9a1 1 0 0 0 2 0V3a1 1 0 0 0-.08-.38Z">
-                                            </path>
-                                        </svg></a>
+                                    <p>Public fair launch on pancakeswap</p>
+                                    <p>Marketing & development</p>
+                                    <p>1000 + holders growth target</p>
                                 </div>
                             </div>
                         </div>
@@ -684,24 +669,20 @@
                             <div class="line-vertical h-68 absolute right-14 w-1 bottom-8">
                                 <div class="absolute left-1/2 h-3 w-3 -translate-x-1/2 rounded-full bottom-0"
                                     style="background-color:#d5b54f;"></div>
-                                <div class="absolute left-1/2 -translate-x-1/2 whitespace-nowrap -bottom-8">Mar
-                                    03,2023</div>
+                                <div class="absolute left-1/2 -translate-x-1/2 whitespace-nowrap -bottom-8">PHASE 3
+                                </div>
                             </div>
                             <div class="w-106 -right-92 h-68 absolute p-6 top-102">
-                                <div class="space-y-4">
+                                <div class="">
                                     <div class="space-y-2">
-                                        <p class="text-xl font-bold">LISTING LBANK</p>
+                                        <!-- <p class="text-xl font-bold">LISTING LBANK</p> -->
                                         <div class="line-horizontal h-1 w-48"></div>
                                     </div>
-                                    <p>LISTING LBANK</p><a
-                                        class="dark-button  inline-flex items-center space-x-2 rounded-full px-4 py-2 text-black !bg-#27a2f0 !text-xs !text-white"
-                                        href="https://finance.yahoo.com/news/lbank-exchange-list-floki-ceo-145500259.html?guccounter=1"><span
-                                            class="font-medium"><!--[-->Source<!--]--></span><svg viewBox="0 0 24 24"
-                                            width="1.2em" height="1.2em" class="h-4 w-4">
-                                            <path fill="currentColor"
-                                                d="M18 10.82a1 1 0 0 0-1 1V19a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h7.18a1 1 0 0 0 0-2H5a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3v-7.18a1 1 0 0 0-1-1Zm3.92-8.2a1 1 0 0 0-.54-.54A1 1 0 0 0 21 2h-6a1 1 0 0 0 0 2h3.59L8.29 14.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L20 5.41V9a1 1 0 0 0 2 0V3a1 1 0 0 0-.08-.38Z">
-                                            </path>
-                                        </svg></a>
+                                    <p>Listing on cex</p>
+                                    <p>Marketing campaign</p>
+                                    <p>5000+ holders growth target</p>
+                                    <p>Listing on CMC or CG</p>
+
                                 </div>
                             </div>
                         </div>
@@ -716,24 +697,30 @@
                             <div class="line-vertical h-68 absolute right-14 w-1 top-8">
                                 <div class="absolute left-1/2 h-3 w-3 -translate-x-1/2 rounded-full top-0"
                                     style="background-color:#1c9596;"></div>
-                                <div class="absolute left-1/2 -translate-x-1/2 whitespace-nowrap -top-8">Mar 06,2023
+                                <div class="absolute left-1/2 -translate-x-1/2 whitespace-nowrap -top-8">PHASE 4
                                 </div>
                             </div>
                             <div class="w-106 -right-92 h-68 absolute p-6 top-8">
-                                <div class="space-y-4">
+                                <div class="">
                                     <div class="space-y-2">
-                                        <p class="text-xl font-bold">LISTING Bitmart</p>
+                                        <!-- <p class="text-xl font-bold">LISTING Bitmart</p> -->
                                         <div class="line-horizontal h-1 w-48"></div>
                                     </div>
-                                    <p>LISTING Bitmart</p><a
+                                    <p>Community expansion</p>
+                                    <p>NFT launch</p>
+                                    <p>Big marketing and promotions</p>
+                                    <p>10000+ holders growth target</p>
+                                    <p>More exchange listing</p>
+                                    <p>Game beta version launch</p>
+                                    <!-- <a
                                         class="dark-button  inline-flex items-center space-x-2 rounded-full px-4 py-2 text-black !bg-#27a2f0 !text-xs !text-white"
                                         href="https://twitter.com/BitMartExchange/status/1631689490229075968?s=20"><span
-                                            class="font-medium"><!--[-->Source<!--]--></span><svg viewBox="0 0 24 24"
+                                            class="font-medium">Source</span><svg viewBox="0 0 24 24"
                                             width="1.2em" height="1.2em" class="h-4 w-4">
                                             <path fill="currentColor"
                                                 d="M18 10.82a1 1 0 0 0-1 1V19a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h7.18a1 1 0 0 0 0-2H5a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3v-7.18a1 1 0 0 0-1-1Zm3.92-8.2a1 1 0 0 0-.54-.54A1 1 0 0 0 21 2h-6a1 1 0 0 0 0 2h3.59L8.29 14.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L20 5.41V9a1 1 0 0 0 2 0V3a1 1 0 0 0-.08-.38Z">
                                             </path>
-                                        </svg></a>
+                                        </svg></a> -->
                                 </div>
                             </div>
                         </div>
@@ -748,32 +735,58 @@
                             <div class="line-vertical h-68 absolute right-14 w-1 bottom-8">
                                 <div class="absolute left-1/2 h-3 w-3 -translate-x-1/2 rounded-full bottom-0"
                                     style="background-color:#1c9596;"></div>
-                                <div class="absolute left-1/2 -translate-x-1/2 whitespace-nowrap -bottom-8">April 5,
-                                    2023</div>
+                                <div class="absolute left-1/2 -translate-x-1/2 whitespace-nowrap -bottom-8">PHASE 5
+                                </div>
                             </div>
                             <div class="w-106 -right-92 h-68 absolute p-6 top-102">
-                                <div class="space-y-4">
+                                <div class="">
                                     <div class="space-y-2">
-                                        <p class="text-xl font-bold">LISTING MEXC - Top 10 Exchange</p>
+                                        <!-- <p class="text-xl font-bold">LISTING MEXC - Top 10 Exchange</p> -->
                                         <div class="line-horizontal h-1 w-48"></div>
                                     </div>
-                                    <p>LISTING Top 10 Exchange</p><a
-                                        class="dark-button  inline-flex items-center space-x-2 rounded-full px-4 py-2 text-black !bg-#27a2f0 !text-xs !text-white"
-                                        href="https://twitter.com/MEXC_Global/status/1643525027927846914"><span
-                                            class="font-medium"><!--[-->Source<!--]--></span><svg viewBox="0 0 24 24"
-                                            width="1.2em" height="1.2em" class="h-4 w-4">
-                                            <path fill="currentColor"
-                                                d="M18 10.82a1 1 0 0 0-1 1V19a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h7.18a1 1 0 0 0 0-2H5a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3v-7.18a1 1 0 0 0-1-1Zm3.92-8.2a1 1 0 0 0-.54-.54A1 1 0 0 0 21 2h-6a1 1 0 0 0 0 2h3.59L8.29 14.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L20 5.41V9a1 1 0 0 0 2 0V3a1 1 0 0 0-.08-.38Z">
-                                            </path>
-                                        </svg></a>
+                                    <p>Big partnership</p>
+                                    <p>Game launch</p>
+                                    <p>Game launch</p>
+                                    <p>50000+ holders growth target</p>
+                                    <p>Growing the ecosystem</p>
                                 </div>
                             </div>
                         </div>
                         <!--]-->
+
+                        <div class="text-lg h-180 w-120 relative shrink-0" style="--555bee25-item\.color:#1c9596;">
+                            <div class="line-horizontal w-92 absolute left-0 top-1/2 h-1 -translate-y-1/2"></div>
+                            <div
+                                class="circle absolute right-0 top-1/2 h-28 w-28 -translate-y-1/2 rounded-full border-4">
+                                <!-- <div class="absolute -left-16 h-28 w-28 bg-black -top-15.5"></div> -->
+                                <img class="pointer-events-none absolute left-1/2 top-1/2 z-10 h-24 w-24 -translate-x-1/2 -translate-y-1/2 select-none rounded-full"
+                                    src="/assets/4-f531a8de.png">
+                            </div>
+                            <div class="line-vertical h-68 absolute right-14 w-1 top-8">
+                                <div class="absolute left-1/2 h-3 w-3 -translate-x-1/2 rounded-full top-0"
+                                    style="background-color:#1c9596;">
+                                </div>
+                                <div class="absolute left-1/2 -translate-x-1/2 whitespace-nowrap -top-8">PHASE 4
+                                </div>
+                            </div>
+                            <div class="w-106 -right-92 h-68 absolute p-6 top-8">
+                                <div class="">
+                                    <div class="space-y-2">
+                                        <!-- <p class="text-xl font-bold">LISTING Bitmart</p> -->
+                                        <div class="line-horizontal h-1 w-48"></div>
+                                    </div>
+                                    <p>Play to earn reward</p>
+                                    <p>Metaverse launch</p>
+                                    <p>Community governance model</p>
+                                    <p>NFT marketplace launch</p>
+                                    <p>100000+ holders growth target</p>
+                                    <p>Update white paper and roadmap</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="text-lg space-y-6 lg:hidden">
-                    <!--[-->
                     <div data-index="0" class="bg-#222222 mx-auto flex max-w-lg space-x-4 rounded-2xl p-4">
                         <div class="bg-white/6 h-20 w-20 rounded-2xl">
                             <div class="inline-flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl p-4">
@@ -782,19 +795,22 @@
                         </div>
                         <div class="flex h-56 flex-col items-start space-y-4">
                             <div class="flex-1 space-y-2">
-                                <p class="text-xs">February</p>
-                                <p class="text-xl font-bold">Start</p>
-                                <p class="text-sm">After successfully presale and listing on Pancakeswap, FLOKICEO
-                                    was listed on Coinmarketcap, Coingecko, continuously reaching the top trending
-                                    on many platforms.</p>
-                            </div><a
+                                <!-- <p class="text-xs">February</p> -->
+                                <p class="text-xl font-bold">PHASE 1</p>
+                                <p class="text-sm">Team Alignment</p>
+                                <p class="text-sm">Research &amp; development</p>
+                                <p class="text-sm">Graphic design</p>
+                                <p class="text-sm">Social media &amp; website creation</p>
+                                <p class="text-sm">Token creation</p>
+                            </div>
+                            <!-- <a
                                 class="dark-button  inline-flex items-center space-x-2 rounded-full px-4 py-2 text-black !bg-black !text-white"><span
-                                    class="font-medium"><!--[-->Source<!--]--></span><svg viewBox="0 0 24 24"
+                                    class="font-medium">Source</span><svg viewBox="0 0 24 24"
                                     width="1.2em" height="1.2em" class="h-4 w-4">
                                     <path fill="currentColor"
                                         d="M18 10.82a1 1 0 0 0-1 1V19a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h7.18a1 1 0 0 0 0-2H5a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3v-7.18a1 1 0 0 0-1-1Zm3.92-8.2a1 1 0 0 0-.54-.54A1 1 0 0 0 21 2h-6a1 1 0 0 0 0 2h3.59L8.29 14.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L20 5.41V9a1 1 0 0 0 2 0V3a1 1 0 0 0-.08-.38Z">
                                     </path>
-                                </svg></a>
+                                </svg></a> -->
                         </div>
                     </div>
                     <div data-index="1" class="bg-#222222 mx-auto flex max-w-lg space-x-4 rounded-2xl p-4">
@@ -805,18 +821,13 @@
                         </div>
                         <div class="flex h-56 flex-col items-start space-y-4">
                             <div class="flex-1 space-y-2">
-                                <p class="text-xs">Feb 27,2023</p>
-                                <p class="text-xl font-bold">BabyDogeSwap</p>
-                                <p class="text-sm">Excited to announce a NEW farm listing and trading is live for
-                                    FlokiCeoo on BabyDogeSwap</p>
-                            </div><a
-                                class="dark-button  inline-flex items-center space-x-2 rounded-full px-4 py-2 text-black !bg-black !text-white"><span
-                                    class="font-medium"><!--[-->Source<!--]--></span><svg viewBox="0 0 24 24"
-                                    width="1.2em" height="1.2em" class="h-4 w-4">
-                                    <path fill="currentColor"
-                                        d="M18 10.82a1 1 0 0 0-1 1V19a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h7.18a1 1 0 0 0 0-2H5a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3v-7.18a1 1 0 0 0-1-1Zm3.92-8.2a1 1 0 0 0-.54-.54A1 1 0 0 0 21 2h-6a1 1 0 0 0 0 2h3.59L8.29 14.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L20 5.41V9a1 1 0 0 0 2 0V3a1 1 0 0 0-.08-.38Z">
-                                    </path>
-                                </svg></a>
+
+                                <p class="text-xl font-bold">PHASE 2</p>
+                                <p class="text-sm">Public fair launch on Pancakeswap</p>
+                                <p class="text-sm">Marketing &amp; development</p>
+                                <p class="text-sm">1000+ holders growth target</p>
+                            </div>
+
                         </div>
                     </div>
                     <div data-index="2" class="bg-#222222 mx-auto flex max-w-lg space-x-4 rounded-2xl p-4">
@@ -827,17 +838,13 @@
                         </div>
                         <div class="flex h-56 flex-col items-start space-y-4">
                             <div class="flex-1 space-y-2">
-                                <p class="text-xs">Mar 03,2023</p>
-                                <p class="text-xl font-bold">LISTING LBANK</p>
-                                <p class="text-sm">LISTING LBANK</p>
-                            </div><a
-                                class="dark-button  inline-flex items-center space-x-2 rounded-full px-4 py-2 text-black !bg-black !text-white"><span
-                                    class="font-medium"><!--[-->Source<!--]--></span><svg viewBox="0 0 24 24"
-                                    width="1.2em" height="1.2em" class="h-4 w-4">
-                                    <path fill="currentColor"
-                                        d="M18 10.82a1 1 0 0 0-1 1V19a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h7.18a1 1 0 0 0 0-2H5a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3v-7.18a1 1 0 0 0-1-1Zm3.92-8.2a1 1 0 0 0-.54-.54A1 1 0 0 0 21 2h-6a1 1 0 0 0 0 2h3.59L8.29 14.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L20 5.41V9a1 1 0 0 0 2 0V3a1 1 0 0 0-.08-.38Z">
-                                    </path>
-                                </svg></a>
+
+                                <p class="text-xl font-bold">PHASE 3</p>
+                                <p class="text-sm">Listing on CEX</p>
+                                <p class="text-sm">Marketing campaign</p>
+                                <p class="text-sm">5000+ holders growth target</p>
+                                <p class="text-sm">Listing on CMC or CG</p>
+                            </div>
                         </div>
                     </div>
                     <div data-index="3" class="bg-#222222 mx-auto flex max-w-lg space-x-4 rounded-2xl p-4">
@@ -848,17 +855,14 @@
                         </div>
                         <div class="flex h-56 flex-col items-start space-y-4">
                             <div class="flex-1 space-y-2">
-                                <p class="text-xs">Mar 06,2023</p>
-                                <p class="text-xl font-bold">LISTING Bitmart</p>
-                                <p class="text-sm">LISTING Bitmart</p>
-                            </div><a
-                                class="dark-button  inline-flex items-center space-x-2 rounded-full px-4 py-2 text-black !bg-black !text-white"><span
-                                    class="font-medium"><!--[-->Source<!--]--></span><svg viewBox="0 0 24 24"
-                                    width="1.2em" height="1.2em" class="h-4 w-4">
-                                    <path fill="currentColor"
-                                        d="M18 10.82a1 1 0 0 0-1 1V19a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h7.18a1 1 0 0 0 0-2H5a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3v-7.18a1 1 0 0 0-1-1Zm3.92-8.2a1 1 0 0 0-.54-.54A1 1 0 0 0 21 2h-6a1 1 0 0 0 0 2h3.59L8.29 14.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L20 5.41V9a1 1 0 0 0 2 0V3a1 1 0 0 0-.08-.38Z">
-                                    </path>
-                                </svg></a>
+                                <p class="text-xl font-bold">PHASE 4</p>
+                                <p class="text-sm">Community expansion</p>
+                                <p class="text-sm">NFT launch</p>
+                                <p class="text-sm">Big marketing and promotions</p>
+                                <p class="text-sm">10000+ holders growth target</p>
+                                <p class="text-sm">More exchange listing</p>
+                                <p class="text-sm">Game beta version launch</p>
+                            </div>
                         </div>
                     </div>
                     <div data-index="4" class="bg-#222222 mx-auto flex max-w-lg space-x-4 rounded-2xl p-4">
@@ -869,22 +873,33 @@
                         </div>
                         <div class="flex h-56 flex-col items-start space-y-4">
                             <div class="flex-1 space-y-2">
-                                <p class="text-xs">April 5, 2023</p>
-                                <p class="text-xl font-bold">LISTING MEXC - Top 10 Exchange</p>
-                                <p class="text-sm">LISTING Top 10 Exchange</p>
-                            </div><a
-                                class="dark-button inline-flex items-center space-x-2 rounded-full px-4 py-2 text-black !bg-black !text-white"><span
-                                    class="font-medium"><!--[-->Source<!--]--></span><svg viewBox="0 0 24 24"
-                                    width="1.2em" height="1.2em" class="h-4 w-4">
-                                    <path fill="currentColor"
-                                        d="M18 10.82a1 1 0 0 0-1 1V19a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h7.18a1 1 0 0 0 0-2H5a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3h11a3 3 0 0 0 3-3v-7.18a1 1 0 0 0-1-1Zm3.92-8.2a1 1 0 0 0-.54-.54A1 1 0 0 0 21 2h-6a1 1 0 0 0 0 2h3.59L8.29 14.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0L20 5.41V9a1 1 0 0 0 2 0V3a1 1 0 0 0-.08-.38Z">
-                                    </path>
-                                </svg></a>
+                                <p class="text-xl font-bold">PHASE 5</p>
+                                <p class="text-sm">Big partnership</p>
+                                <p class="text-sm">Game launch</p>
+                                <p class="text-sm">50000+ holders growth target</p>
+                                <p class="text-sm">Growing the ecosystem</p>
+                            </div>
                         </div>
                     </div>
-                    <!--]-->
+                    <div data-index="4" class="bg-#222222 mx-auto flex max-w-lg space-x-4 rounded-2xl p-4">
+                        <div class="bg-white/6 h-20 w-20 rounded-2xl">
+                            <div class="inline-flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl p-4">
+                                <img src="/assets/5-51f214bf.png">
+                            </div>
+                        </div>
+                        <div class="flex h-56 flex-col items-start space-y-4">
+                            <div class="flex-1 space-y-2">
+                                <p class="text-xl font-bold">PHASE 6</p>
+                                <p class="text-sm">Play to earn reward</p>
+                                <p class="text-sm">Metaverse launch</p>
+                                <p class="text-sm">Community governance model</p>
+                                <p class="text-sm">NFT marketplace launch</p>
+                                <p class="text-sm">100000+ holders growth target</p>
+                                <p class="text-sm">Update white paper and roadmap</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!--]-->
             </div>
         </section>
 
@@ -1016,11 +1031,11 @@
 
 
 
+<script src="AOS/aos.js"></script>
 <script src="vendors/js/script.js"></script>
 <script type="text/javascript" src="/vendors/js/vanilla-tilt.js"></script>
-<script src="AOS/aos.js"></script>
-
-
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <script>
 
     // function openNav() {
@@ -1056,6 +1071,61 @@
         "glare-prerender": false,
     });
 
+
+
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([['Task', 'Percentage'],
+        ['Public', 35],
+        ['Burning', 25],
+        ['Game reserves', 12],
+        ['Nft marketplace', 8],
+        ['Marketing& promotion', 9],
+        ['Metaverse launch', 6],
+        ['Partnership', 3],
+        ['Team', 2]
+        ]);
+
+        var options = {
+
+            is3D: true
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('myChart'));
+        chart.draw(data, options);
+    }
+
+    // var xValues = ["Public", "Burning", "Game reserves", "Nft marketplace", "Marketing& promotion", "Metaverse launch", "Partnership", "Team"];
+    // var yValues = [35, 25, 12, 8, 9, 6, 3, 2];
+    // var barColors = [
+    //     "#3366cc",
+    //     "#66aa00",
+    //     "#dd4477",
+    //     "#0099c6",
+    //     "#990099",
+    //     "#109618",
+    //     "#ff9900",
+    //     "#dc3912",
+    // ];
+
+    // new Chart("myChart", {
+    //     type: "doughnut",
+    //     data: {
+    //         labels: xValues,
+    //         datasets: [{
+    //             backgroundColor: barColors,
+    //             data: yValues
+    //         }]
+    //     },
+    //     options: {
+    //         title: {
+    //             display: true,
+    //             text: "World Wide Wine Production 2018"
+    //         }
+    //     }
+    // });
 
 </script>
 

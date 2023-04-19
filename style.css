@@ -1550,8 +1550,18 @@ select {
         margin-top: 2rem
     }
 
+    .sm\:width {
+        width: 100%;
+        max-width: 340px;
+        height: 300px;
+    }
+
     .sm\:block {
         display: block
+    }
+
+    .sm\:flex {
+        display: flex
     }
 
     .sm\:h-10 {
@@ -1651,6 +1661,12 @@ select {
 
     .md\:grid-cols-6 {
         grid-template-columns: repeat(6, minmax(0, 1fr))
+    }
+
+    .md\:width {
+        width: 100%;
+        max-width: 500px;
+        height: 400px;
     }
 
     .md\:block {
@@ -1904,7 +1920,8 @@ button[data-v-3c9d0845] {
     --svg-fill: #fff;
     --scroll: #333;
     --scroll-bg: #999;
-    /* --hero-banner-shadow: inset 2px -200px 93px -92px rgba(231, 235, 236, 1);
+    --bg-nav:
+        /* --hero-banner-shadow: inset 2px -200px 93px -92px rgba(231, 235, 236, 1);
     --movie-details-card: linear-gradient(to right, #fafafa, #ddc700);
     --header: linear-gradient(to right, #ddc700, #ddc700);
     --search-bg: #e7ebec;
@@ -2074,6 +2091,13 @@ a svg {
 .heading-text {
     font-size: 4.25rem;
     line-height: 5.5rem;
+    /* position: relative;
+    font-size: 58px;
+    color: var(--scroll-bg);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--color-text);
+    padding: 13px 0 0;
+    z-index: 1; */
 }
 
 .py-22 {
@@ -2261,7 +2285,7 @@ a svg {
     z-index: 0;
     width: 100%;
     /* filter: drop-shadow(0px 5px -5px rgb(255, 255, 255, 0.2)); */
-    filter: drop-shadow(-8px -65px 40px rgb(0 0 0 / 0.4));
+    filter: drop-shadow(-8px -125px 65px rgb(0 0 0 / 0.2));
     fill: var(--svg-fill);
 }
 
@@ -2288,6 +2312,14 @@ a svg {
     /* background: linear-gradient(135deg, #ffcc0093, #ffcc004b); */
 }
 
+.bg-\#222222 {
+
+    box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.5);
+    background-color: rgba(225, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
 .bg-back {
     background-color: var(--bg-before);
 }
@@ -2297,6 +2329,8 @@ a svg {
         font-size: 2rem;
         line-height: 2.5rem;
     }
+
+
 }
 
 
@@ -2308,7 +2342,7 @@ a svg {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: var(--color-bg);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -2342,4 +2376,144 @@ a svg {
     margin-left: 50px;
 }
 
+#navButton {
+    color: var(--color-text);
+}
+
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    --un-bg-opacity: 1;
+    background-color: var(--card-btn);
+    border-radius: 50%;
+    width: 2.7em;
+    height: 2.7em;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    font-size: 22px;
+    color: var(--card-text);
+}
+
 /* shaan designs ends  */
+
+.border-one {
+    border-color: rgba(243, 186, 47, 1)
+}
+
+.border-two {
+    border-color: rgba(139, 197, 63, 1)
+}
+
+.border-three {
+    border-color: rgba(139, 197, 63, 1)
+}
+
+.border-four {
+    border-color: rgba(139, 197, 63, 1)
+}
+
+.border-five {
+    border-color: rgba(139, 197, 63, 1)
+}
+
+.border-six {
+    border-color: rgba(139, 197, 63, 1)
+}
+
+.border-seven {
+    border-color: rgba(139, 197, 63, 1)
+}
+
+.border-eight {
+    border-color: rgba(139, 197, 63, 1)
+}
+
+#myChart svg rect {
+    fill: transparent;
+}
+
+#myChart svg>g>g>g>text {
+    fill: var(--color-text);
+    font-size: 16px;
+
+}
+
+
+
+/* .piechart-a-chart {
+
+    position: absolute;
+    left: -54px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.height-ob {
+    height: 30rem;
+}
+
+
+.piechart-ltr {
+    height: 400px;
+}
+
+@media (max-width: 400px) {
+    .height-ob {
+        height: 20rem;
+    }
+
+    .piechart-ltr {
+        width: 325px;
+        height: 400px;
+    }
+
+    #piechart svg>g>g>g>text {
+        fill: var(--color-text);
+        font-size: 12px;
+
+    }
+
+    #piechart svg rect {
+        fill: transparent;
+        height: 300px;
+        width: 100px;
+
+    }
+
+    #piechart div>div>div>svg>g {
+        width: 100px;
+
+    }
+
+    #piechart div>div>div>svg>g>rect {
+        width: 100px;
+
+    }
+
+}
+
+.google-visualization-tooltip path {
+    fill: var(--color-bg);
+
+} */
+
+
+@media (min-width: 1000px) {
+    .myChart {
+        width: 100%;
+        max-width: 500px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .myChart {
+        max-width: 380px;
+        height: auto;
+        margin-left: -80px;
+    }
+}

@@ -23,3 +23,18 @@ if (mode == 'light') {
     document.documentElement.classList.remove("dark")
     document.documentElement.classList.add("light")
 }
+
+
+// copy text 
+
+function copyAddress() {
+    var address = document.getElementById("address").innerText;
+    var copyBtn = document.getElementById("copyBtn");
+    navigator.clipboard.writeText(address);
+    copyBtn.innerText = "  Copied ! ";
+    setTimeout(function () {
+        copyBtn.innerText = "Copy Address";
+    }, 4000);
+}
+
+// copy text 
